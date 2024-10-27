@@ -1,15 +1,3 @@
-# Requirements
-import pandas as pd
-import numpy as np
-import seaborn as sns
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LinearRegression
-lr=LinearRegression()
-from sklearn.neighbors import KNeighborsClassifier
-knn = KNeighborsClassifier(n_neighbors=27) # best option 27
-from sklearn import metrics
-
 # Diabetes-Prediction
 
  This project aimed to develop a predictive model for diabetes diagnosis by analyzing medical data, focusing on key health metrics associated with diabetes
@@ -27,3 +15,15 @@ from sklearn import metrics
    negatives, showcasing its effectiveness in distinguishing diabetic and non-diabetic cases more accurately than Linear Regression.
 
 Results: The KNN model’s 77.9% accuracy demonstrated that it is a more suitable algorithm for predicting diabetes in this dataset, outperforming Linear Regression significantly. Future work could involve hyperparameter tuning and exploring additional models to improve prediction accuracy further.
+
+# Requirements
+import pandas as pd
+import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+lr=LinearRegression()
+from sklearn.neighbors import KNeighborsClassifier
+knn = KNeighborsClassifier(n_neighbors=27) # best option 27
+from sklearn import metrics
